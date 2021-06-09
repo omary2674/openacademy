@@ -3,7 +3,7 @@
     'version': '14.0.01',
     'depends': ['base', 'mail', 'sale', 'report_xlsx'],
     'author': "Mohammad Omari",
-    'website': "odoo.com",
+    'website': "adawliah.com",
     'category': 'Category',
     'description': """
         Open Academy module for managing traning:
@@ -29,7 +29,7 @@
         'wizard/report_wizard_view.xml',
         'reports/openacademy_pdf_report.xml',
         'reports/openacademy_xlsx_report.xml',
-        # 'views/product_sale_analysis.xml',
+        'views/product_sale_analysis.xml',
     ],
     # data files containing optionally loaded demonstration data
     'demo': [

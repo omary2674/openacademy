@@ -53,7 +53,7 @@ class ProductSaleAnalysis(models.Model):
                             aml.move_id as invoice_id,
                             am.partner_id as partner_id,
                             am.invoice_user_id as user_id,
-                            am.type as type,
+                            am.move_type as type,
                             am.state as state,
                             aml.exclude_from_invoice_tab as exclude_from_invoice_tab
                         FROM product_product p
@@ -61,11 +61,11 @@ class ProductSaleAnalysis(models.Model):
                         LEFT JOIN account_move am ON (aml.move_id = am.id)
                         JOIN (
                             SELECT id,(CASE
-                                 WHEN am.type::text = ANY (ARRAY['in_refund'::character varying::text, 'in_invoice'::character varying::text])
+                                 WHEN am.move_type::text = ANY (ARRAY['in_refund'::character varying::text, 'in_invoice'::character varying::text])
                                     THEN -1
                                     ELSE 1
                                 END) AS sign,(CASE
-                                 WHEN am.type::text = ANY (ARRAY['out_refund'::character varying::text, 'in_invoice'::character varying::text])
+                                 WHEN am.move_type::text = ANY (ARRAY['out_refund'::character varying::text, 'in_invoice'::character varying::text])
                                     THEN -1
                                     ELSE 1
                                 END) AS sign_qty
