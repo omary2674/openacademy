@@ -33,5 +33,6 @@
     ],
     # data files containing optionally loaded demonstration data
     'demo': [
+        'demo/demo.xml',
     ],
 }

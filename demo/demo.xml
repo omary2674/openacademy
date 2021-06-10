@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record model="openacademy.course" id="1">
+            <field name="name">Oracle SQL 19c</field>
+            <field name="description">Oracle SQL 19c description Can have multiple lines </field>
+        </record>
+        <record model="openacademy.course" id="2">
+            <field name="name">Oracle PL/SQL 19c</field>
+            <!-- no description for this one -->
+        </record>
+        <record model="openacademy.course" id="3">
+            <field name="name">Oracle Forms 19c</field>
+            <field name="description">Oracle Forms 19c description</field>
+        </record>
+    </data>
+</odoo>
