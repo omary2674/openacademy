@@ -2,15 +2,24 @@
     <data>
         <record model="openacademy.course" id="1">
             <field name="name">Oracle SQL 19c</field>
-            <field name="description">Oracle SQL 19c description Can have multiple lines </field>
+            <field name="description">Oracle SQL 19c Standard Query Language </field>
         </record>
         <record model="openacademy.course" id="2">
             <field name="name">Oracle PL/SQL 19c</field>
-            <!-- no description for this one -->
+            <field name="description"> Procedure Language SQL  </field>
         </record>
         <record model="openacademy.course" id="3">
-            <field name="name">Oracle Forms 19c</field>
-            <field name="description">Oracle Forms 19c description</field>
+            <field name="name">Oracle Forms 12c</field>
+            <field name="description">Oracle Forms 12c Create screen for data entry and search </field>
+        </record>
+        <record model="openacademy.course" id="4">
+            <field name="name">Oracle Report 12c</field>
+            <field name="description">Create Report with format pdf , xml , html excel , text </field>
+        </record>
+
+        <record model="openacademy.course" id="5">
+            <field name="name">Oracle BI 12c</field>
+            <field name="description">Create Dashboard to support decision makers </field>
         </record>
     </data>
 </odoo>
