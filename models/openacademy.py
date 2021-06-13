@@ -27,6 +27,7 @@ class Course(models.Model):
         default='draft',
         copy=False)
     course_date = fields.Date('course date', required=True, default=fields.Date.today())
+    course_image = fields.Image(string="Image")
 
     @api.model
     def create(self, vals):
